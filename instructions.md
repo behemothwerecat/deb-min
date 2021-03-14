@@ -71,7 +71,9 @@ Set this as updateProxy in /etc/qubes-rpc/policy/qubes.UpdatesProxy
 Debian templates will use this for updates with no further configuration.
 
 For [TLS support](https://askubuntu.com/questions/1307210/how-to-get-apt-cacher-ng-to-download-and-cache-packages-from-apt-https-repositor), we will change the repository definition FROM:
-https://yum.qubes-os.org/ TO: http://HTTPS///yum.qubes-os.org/
+`https://yum.qubes-os.org/` 
+TO: 
+`http://HTTPS///yum.qubes-os.org/`
 
 Without any other changes to the apt-cacher configuration the qube will
 use HTTP to the proxy which will use TLS to pick up the packages and
